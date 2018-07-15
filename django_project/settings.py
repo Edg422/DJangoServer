@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '4fq^(ef&!_xt5f0_(3=0z)%%fs)z3n4pmj=!0l!nt0xb%19h4e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '178.128.184.20', u'www.goblin.pe']
+ALLOWED_HOSTS = ['www.goblin.pe']
 
 
 # Application definition
