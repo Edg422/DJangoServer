@@ -55,7 +55,9 @@ MIDDLEWARE_CLASSES = (
 HOST_MIDDLEWARE_URLCONF_MAP = {
     # Control Panel
     "www.goblin.pe": "goblin.urls",
+    "goblin.pe": "goblin.urls",
     "www.asecodeso.com": "asecodeso.urls",
+    "asecodeso.com": "asecodeso.urls",
 }
 
 ROOT_URLCONF = 'django_project.urls'
