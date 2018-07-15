@@ -25,11 +25,12 @@ SECRET_KEY = '4fq^(ef&!_xt5f0_(3=0z)%%fs)z3n4pmj=!0l!nt0xb%19h4e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '178.128.184.20', '.goblin.pe']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '178.128.184.20', '.goblin.pe', '.asecodeso.com']
 
 # Application definition
 
 INSTALLED_APPS = (
+    'asecodeso',
     'goblin',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -54,6 +55,7 @@ MIDDLEWARE_CLASSES = (
 HOST_MIDDLEWARE_URLCONF_MAP = {
     # Control Panel
     "www.goblin.pe": "goblin.urls",
+    "www.asecodeso.com": "asecodeso.urls",
 }
 
 ROOT_URLCONF = 'django_project.urls'
