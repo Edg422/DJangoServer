@@ -27,14 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '178.128.184.20', '.goblin.pe']
 
-HOST_MIDDLEWARE_URLCONF_MAP = {
-    # Control Panel
-    "www.goblin.pe": "webapp.sites.goblin.urls",
-}
-
 # Application definition
 
 INSTALLED_APPS = (
+    'goblin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,7 +40,7 @@ INSTALLED_APPS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'goblin.multihost.MultiHostMiddleware',
+    'goblin.middleware.multihost.MultiHostMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -54,6 +50,11 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
 )
+
+HOST_MIDDLEWARE_URLCONF_MAP = {
+    # Control Panel
+    "www.goblin.pe": "webapp.sites.goblin.urls",
+}
 
 ROOT_URLCONF = 'django_project.urls'
 
