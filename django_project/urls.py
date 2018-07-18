@@ -18,6 +18,6 @@ from django.contrib import admin
 from goblin import views
 
 urlpatterns = [
-    url(r'^$', include(asecodeso.urls)),
+    url(r'^$', include('asecodeso.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
