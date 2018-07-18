@@ -41,7 +41,7 @@ INSTALLED_APPS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    'goblin.middleware.multihost.MultiHostMiddleware',
+    #'goblin.middleware.multihost.MultiHostMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
