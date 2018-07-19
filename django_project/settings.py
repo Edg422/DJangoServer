@@ -42,6 +42,7 @@ INSTALLED_APPS = (
 
 MIDDLEWARE_CLASSES = (
     #'goblin.middleware.multihost.MultiHostMiddleware',
+    'django.middleware.cache.UpdateCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -50,6 +51,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
 )
 
 HOST_MIDDLEWARE_URLCONF_MAP = {
@@ -137,3 +139,7 @@ CACHES = {
         'LOCATION': '/var/tmp/django_cache',
     }
 }
+
+CACHE_MIDDLEWARE_ALIAS = 'asecodeso_'
+
+CACHE_MIDDLEWARE_SECONDS = 6000
