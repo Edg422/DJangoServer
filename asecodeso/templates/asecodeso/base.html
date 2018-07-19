@@ -37,6 +37,7 @@
     {% endcompress %}
 
     <!-- Revolution Slider -->
+    {% compress css %}
     <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css' %}">
     <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/revolution-slider/revolution/css/settings.css' %}">
     <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/revolution-slider/revolution/css/layers.css' %}">
@@ -49,6 +50,7 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="{% static 'asecodeso/assets/css/custom.css' %}">
+    {% endcompress %}
 
 </head>
 <body>
