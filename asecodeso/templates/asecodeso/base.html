@@ -6,6 +6,10 @@
 
     {% load staticfiles %}
 
+    {% load compress %}
+
+    {% compress css %}
+
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{%  static '/favicon.ico' %}"/>
     <!-- Google Fonts -->
@@ -41,6 +45,8 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="{% static 'asecodeso/assets/css/custom.css' %}">
+
+    {% endcompress %}
 
 </head>
 <body>
