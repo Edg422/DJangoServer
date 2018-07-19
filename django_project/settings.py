@@ -154,6 +154,6 @@ STATICFILES_FINDERS = (
 
 COMPRESS_ROOT = '/home/django/django_project/asecodeso/static/asecodeso'
 
-COMPRESS_URL = '/static/asecodeso/CACHE/'
+COMPRESS_URL = '/static/asecodeso/'
 
 COMPRESS_ENABLED = True
