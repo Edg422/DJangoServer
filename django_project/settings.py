@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'compressor'
+    'compressor'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -145,3 +145,9 @@ CACHE_MIDDLEWARE_ALIAS = 'default'
 
 CACHE_MIDDLEWARE_SECONDS = 6000
 
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # other finders..
+    'compressor.finders.CompressorFinder',
+)
