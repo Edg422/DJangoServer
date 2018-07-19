@@ -30,7 +30,6 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', '178.128.184.20', '.goblin.pe', '.ase
 # Application definition
 
 INSTALLED_APPS = (
-    'compressor',
     'asecodeso',
     'goblin',
     'django.contrib.admin',
@@ -39,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'compressor'
 )
 
 MIDDLEWARE_CLASSES = (
