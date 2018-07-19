@@ -131,3 +131,9 @@ def ip_addresses():
 # Discover our IP address
 #ALLOWED_HOSTS = ip_addresses()
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': '/var/tmp/django_cache',
+    }
+}
