@@ -450,7 +450,7 @@
         {% endblock %}
 
     {% block javascripts %}
-    {% compress js %}
+
     <!-- JS Implementing Plugins -->
     <script src="{% static 'asecodeso/assets/vendor/appear.js' %}"></script>
     <script src="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.js' %}"></script>
@@ -460,9 +460,9 @@
     <script src="{% static 'asecodeso/assets/vendor/dzsparallaxer/advancedscroller/plugin.js' %}"></script>
     <script src="{% static 'asecodeso/assets/vendor/fancybox/jquery.fancybox.min.js' %}"></script>
     <script src="{% static 'asecodeso/assets/vendor/typedjs/typed.min.js' %}"></script>
-    {% endcompress %}
 
-    {% compress js %}
+
+
     <!-- JS Revolution Slider -->
     <script src="{% static 'asecodeso/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
     <script src="{% static 'asecodeso/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
@@ -478,9 +478,9 @@
     <script src="{% static 'asecodeso/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
     <script src="{% static 'asecodeso/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
     <script src="{% static 'asecodeso/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
-    {% endcompress %}
 
-    {% compress js %}
+
+
     <!-- JS Unify -->
     <script src="{% static 'asecodeso/assets/js/hs.core.js' %}"></script>
     <script src="{% static 'asecodeso/assets/js/components/hs.carousel.js' %}"></script>
@@ -491,7 +491,7 @@
     <script src="{% static 'asecodeso/assets/js/components/hs.popup.js' %}"></script>
     <script src="{% static 'asecodeso/assets/js/components/text-animation/hs.text-slideshow.js' %}"></script>
     <script src="{% static 'asecodeso/assets/js/components/hs.go-to.js' %}"></script>
-    {% endcompress %}
+
 
     <!-- JS Customization -->
     <script src="{% static 'asecodeso/assets/js/custom.js' %}"></script>
