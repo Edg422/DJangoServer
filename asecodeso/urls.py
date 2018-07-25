@@ -9,4 +9,5 @@ app_name = 'asecodeso'
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
+    url(r'^$/nosotros', views.nosotros, name='nosotros'),
 ]
