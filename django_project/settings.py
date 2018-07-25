@@ -42,7 +42,7 @@ INSTALLED_APPS = (
 )
 
 MIDDLEWARE_CLASSES = (
-    #'goblin.middleware.multihost.MultiHostMiddleware',
+    'goblin.middleware.multihost.MultiHostMiddleware',
     'django.middleware.gzip.GZipMiddleware',
     'django.middleware.cache.UpdateCacheMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
