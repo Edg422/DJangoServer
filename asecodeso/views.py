@@ -6,3 +6,6 @@ def index(request):
 
 def nosotros(request):
     return render(request, 'asecodeso/nosotros.html')
+
+def preguntas(request):
+    return render(request, 'asecodeso/preguntas.html')

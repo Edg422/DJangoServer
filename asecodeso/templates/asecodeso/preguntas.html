@@ -1,0 +1,584 @@
+{% extends 'asecodeso/base.html' %}
+
+{% block title %}ASECODESO{% endblock %}
+
+    {% load compress %}
+
+    {% load staticfiles %}
+
+    {% block stylesheets %}
+    <!-- CSS Global Icons -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-hs/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hamburgers/hamburgers.min.css' %}">
+    {% endcompress %}
+
+    <!-- CSS Unify -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-core.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-components.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-globals.css' %}">
+    {% endcompress %}
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/custom.css' %}">
+    {% endblock %}
+
+
+        {% block content %}
+        <!-- Promo Block -->
+        <section class="container text-center g-pt-120 g-pb-30">
+            <h2 class="g-color-black g-font-weight-600 g-font-size-50 g-mb-70">
+                Preguntas Frecuentes
+            </h2>
+            <ul class="list-inline mb-0">
+                <li class="list-inline-item g-brd-right g-brd-gray-light-v4 px-4 mx-0">
+                    <a class="js-go-to g-color-gray-dark-v5 g-font-weight-600 text-uppercase g-text-underline--none--hover" href="#!" data-target="#formalizacion">
+                        Formalización
+                    </a>
+                </li>
+                <li class="list-inline-item g-brd-right g-brd-gray-light-v4 px-4 mx-0">
+                    <a class="js-go-to g-color-gray-dark-v5 g-font-weight-600 text-uppercase g-text-underline--none--hover" href="#!" data-target="#contabilidad">
+                        Contabilidad
+                    </a>
+                </li>
+                <li class="list-inline-item g-brd-right g-brd-gray-light-v4 px-4 mx-0">
+                    <a class="js-go-to g-color-gray-dark-v5 g-font-weight-600 text-uppercase g-text-underline--none--hover" href="#!" data-target="#certificacioniso">
+                        Certificacion ISO
+                    </a>
+                </li>
+                <li class="list-inline-item g-brd-right g-brd-gray-light-v4 px-4 mx-0">
+                    <a class="js-go-to g-color-gray-dark-v5 g-font-weight-600 text-uppercase g-text-underline--none--hover" href="#!" data-target="#iso9001">
+                        ISO9001
+                    </a>
+                </li>
+		        <li class="list-inline-item px-4 mx-0">
+                    <a class="js-go-to g-color-gray-dark-v5 g-font-weight-600 text-uppercase g-text-underline--none--hover" href="#!" data-target="#iso14001">
+                        ISO14001
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- End Promo Block -->
+
+        <!-- Accordion -->
+        <section class="container g-pb-100">
+            <!-- Accordion -->
+            <div id="formalizacion" class="u-shadow-v11 rounded g-py-100 g-mb-100">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Heading -->
+                        <div class="text-center g-mb-60">
+                            <h2 class="g-font-weight-600 text-uppercase mb-2">
+                                Formalización
+                            </h2>
+                        </div>
+                        <!-- End Heading -->
+
+                        <div id="accordion" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded-0 g-mb-20">
+                                <div id="accordion-heading-01" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-body-01" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-01">
+                                            ¿Qué diferencia existe entre una persona natural con negocio y una persona jurídica?
+                                                <span class="u-accordion__control-icon">
+                                                    <i class="fa fa-angle-down"></i>
+                                                    <i class="fa fa-angle-up"></i>
+                                                </span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="accordion-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-01" data-parent="#accordion">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        Una persona natural con negocio es aquel que toma a título personal los beneficios u obligaciones que se adquieran con las operaciones del negocio a realizar. <br>
+					                    Esta modalidad normalmente se usa para negocios pequeños, como bodegas, librerías, etc., ya que si tus ventas mensuales no elevan los S/ 8,000.00 soles, podrías acogerte al NRUS (Nuevo régimen único simplificado). Pero al acogerse a éste régimen no te permite emitir comprobantes con crédito fiscal. <br>
+					                    En cambio, una persona jurídica, es una persona ficticia, constituida por una o varias personas, naturales o jurídicas que se unen por medio de una minuta, en donde los intervinientes obtienen una responsabilidad limitada con los beneficios u obligaciones que se adquieran de la empresa. <br>
+					                    En esta modalidad no se podrá acoger al NRUS como en el caso anterior, pero todos los comprobantes que se emitan sí cuenta con crédito fiscal.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded-0 g-mb-20">
+                                <div id="accordion-heading-02" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-body-02" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-02">
+                                            ¿Cuántas personas mínimo necesito para ser una persona jurídica?
+                                            <span class="u-accordion__control-icon">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="accordion-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-02" data-parent="#accordion">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        El mínimo es 01 persona natural que es el caso de la EIRL (Empresa individual de responsabilidad limitada). Sin embargo, si deseas contar con una sociedad tendría que ser mínimo 02 personas naturales o jurídicas, en este caso podrías decidir entre algunas opciones como las siguientes: SAC – SRL – SA – Soc. Civ. De Resp. Limitada, entre otras.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded-0 g-mb-20">
+                                <div id="accordion-heading-03" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-body-03" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-03">
+                                            ¿Cuánto es el mínimo que debo aportar para constituir mi empresa?
+                                            <span class="u-accordion__control-icon">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="accordion-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-03" data-parent="#accordion">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        El mínimo a aportar es desde S/ 1.00 soles en caso quieras constituir una EIRL, pero en caso quieras constituir una sociedad dependerá la cantidad de socios con la que va a contar la empresa, por ejemplo, si serán dos socios, el mínimo será de S/ 2.00 soles.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded-0 g-mb-20">
+                                <div id="accordion-heading-04" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-body-04" data-toggle="collapse" data-parent="#accordion" aria-expanded="false" aria-controls="accordion-body-04">
+                                            ¿El aporte del capital tendrá que ser efectivo necesariamente?
+                                            <span class="u-accordion__control-icon">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="accordion-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-heading-04" data-parent="#accordion">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        No, el aporte puede ser de bienes dinerarios (efectivo) o bienes no dinerarios (maquinarias, equipos, mobiliario, etc.) así como también se podrá aportar registros como marcas, patentes, etc. <br>
+					                    Siempre y cuando estén debidamente registrados y certificados.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Accordion -->
+
+            <!-- Accordion -->
+            <div id="contabilidad" class="u-shadow-v11 rounded g-py-100 g-mb-100">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Heading -->
+                        <div class="text-center g-mb-60">
+                            <h2 class="g-font-weight-600 text-uppercase mb-2">
+                                Contabilidad
+                            </h2>
+                        </div>
+                        <!-- End Heading -->
+
+                        <div id="accordion-1" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded-0 g-mb-20">
+                                <div id="accordion-1-heading-01" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-1-body-01" data-toggle="collapse" data-parent="#accordion-1" aria-expanded="false" aria-controls="accordion-1-body-01">
+                                            Guarantee?
+                                            <span class="u-accordion__control-icon">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="accordion-1-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-1-heading-01" data-parent="#accordion-1">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                        raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded-0 g-mb-20">
+                                <div id="accordion-1-heading-02" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-1-body-02" data-toggle="collapse" data-parent="#accordion-1" aria-expanded="false" aria-controls="accordion-1-body-02">
+                                            Do you have any built-in caching?
+                                            <span class="u-accordion__control-icon">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="accordion-1-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-1-heading-02" data-parent="#accordion-1">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                        raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded-0 g-mb-20">
+                                <div id="accordion-1-heading-03" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-1-body-03" data-toggle="collapse" data-parent="#accordion-1" aria-expanded="false" aria-controls="accordion-1-body-03">
+                                            Can I add/upgrade my plan at any time?
+                                            <span class="u-accordion__control-icon">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="accordion-1-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-1-heading-03" data-parent="#accordion-1">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                        raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded-0 g-mb-20">
+                                <div id="accordion-1-heading-04" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-1-body-04" data-toggle="collapse" data-parent="#accordion-1" aria-expanded="false" aria-controls="accordion-1-body-04">
+                                            What access comes with my hosting plan?
+                                            <span class="u-accordion__control-icon">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="accordion-1-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-1-heading-04" data-parent="#accordion-1">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                        on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                        raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Accordion -->
+
+            <!-- Accordion -->
+            <div id="certificacioniso" class="u-shadow-v11 rounded g-py-100 g-mb-100">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Heading -->
+                        <div class="text-center g-mb-60">
+                            <h2 class="g-font-weight-600 text-uppercase mb-2">
+                                CERTIFICACION ISO
+                            </h2>
+                        </div>
+                        <!-- End Heading -->
+
+                        <div id="accordion-2" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded-0 g-mb-20">
+                                <div id="accordion-2-heading-01" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-2-body-01" data-toggle="collapse" data-parent="#accordion-2" aria-expanded="false" aria-controls="accordion-2-body-01">
+                                            ¿Por qué es tan importante contar con una ISO?
+                                            <span class="u-accordion__control-icon">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="accordion-2-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-2-heading-01" data-parent="#accordion-2">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        La ISO es una federación de alcance mundial integrada por cuerpos de estandarización nacional. La certificación de ésta es para empresas que ofrecen tanto bienes, como servicios.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded-0 g-mb-20">
+                                <div id="accordion-2-heading-02" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-2-body-02" data-toggle="collapse" data-parent="#accordion-2" aria-expanded="false" aria-controls="accordion-2-body-02">
+                                            ¿Es muy complicado adquirir una certificación ISO?
+                                            <span class="u-accordion__control-icon">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+                                </div>
+                                <div id="accordion-2-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-2-heading-02" data-parent="#accordion-2">
+                                    <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                        No lo llamaríamos complicado, sino tedioso; ya que al realizar la implementación del sistema de gestión de cualquiera de las normas ISO se deberá presentar mucha información, es por ello que es tedioso al momento de postular sin una buena implementación.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Card -->
+
+                            <!-- Card -->
+                            <div class="card g-brd-none rounded-0 g-mb-20">
+                                <div id="accordion-2-heading-03" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                    <h5 class="mb-0">
+                                        <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-2-body-03" data-toggle="collapse" data-parent="#accordion-2" aria-expanded="false" aria-controls="accordion-2-body-03">
+                                            ¿Cómo se implementan los sistemas de gestión?
+                                            <span class="u-accordion__control-icon">
+                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-up"></i>
+                                            </span>
+                                        </a>
+                                    </h5>
+                            </div>
+                            <div id="accordion-2-body-03" class="collapse" role="tabpanel" aria-labelledby="accordion-2-heading-03" data-parent="#accordion-2">
+                                <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                    Los sistemas de gestión se implementan de acuerdo a los requisitos de cada norma, es por ello que cada uno tiene una implementación distinta.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="card g-brd-none rounded-0 g-mb-20">
+                            <div id="accordion-2-heading-04" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-2-body-04" data-toggle="collapse" data-parent="#accordion-2" aria-expanded="false" aria-controls="accordion-2-body-04">
+                                        ¿Cuántas y cuáles son las normas ISO?
+                                        <span class="u-accordion__control-icon">
+                                            <i class="fa fa-angle-down"></i>
+                                            <i class="fa fa-angle-up"></i>
+                                        </span>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="accordion-2-body-04" class="collapse" role="tabpanel" aria-labelledby="accordion-2-heading-04" data-parent="#accordion-2">
+                                <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                    Existen varias normas ISO, sin embargo, te detallamos a continuación las principales en nuestro país: </br>
+                                    -	ISO 9001:2015 DE GESTIÓN DE CALIDAD</br>
+                                    -	ISO 14001:2015 DE GESTIÓN AMBIENTAL</br>
+                                    -	ISO 45001, OHSAS 18001 SEGURIDAD Y SALUD EN EL TRABAJO</br>
+                                    -	ISO 37001, SISTEMA DE GESTIÓN ANTISOBORNO</br>
+                                    -	ISO 27001 DE SEGURIDAD DE LA INFORMACIÓN</br>
+                                    -	ISO/IEC 17025 LABORATORIOS - ORGANISMOS INSPECCIÓN</br>
+                                    -	HACCP-BRC-ORGÁNICO-FSSC 22000, INOCUIDAD DE LOS ALIMENTOS</br>
+                                    -	COMERCIO JUSTO WFTO - FAIR TRADE
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Accordion -->
+
+        <!-- Accordion -->
+        <div id="iso9001" class="u-shadow-v11 rounded g-py-100 g-mb-100">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Heading -->
+                    <div class="text-center g-mb-60">
+                        <h2 class="g-font-weight-600 text-uppercase mb-2">
+                            ISO 9001:2015 DE GESTIÓN DE CALIDAD
+                        </h2>
+                    </div>
+                    <!-- End Heading -->
+
+                    <div id="accordion-3" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
+                        <!-- Card -->
+                        <div class="card g-brd-none rounded-0 g-mb-20">
+                            <div id="accordion-3-heading-01" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-3-body-01" data-toggle="collapse" data-parent="#accordion-3" aria-expanded="false" aria-controls="accordion-3-body-01">
+                                        ¿Qué es ISO 9001:2015 DE GESTIÓN DE CALIDAD?
+                                        <span class="u-accordion__control-icon">
+                                            <i class="fa fa-angle-down"></i>
+                                            <i class="fa fa-angle-up"></i>
+                                        </span>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="accordion-3-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-3-heading-01" data-parent="#accordion-3">
+                                <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                    Es un sistema de gestión de calidad establecido por la ISO y está orientado a mejorar la calidad del producto y/o servicio. </br>
+					                También, tiene por objetivo evitar el malestar del cliente al momento de estar al contacto con el producto o servicio.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="card g-brd-none rounded-0 g-mb-20">
+                            <div id="accordion-3-heading-02" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-3-body-02" data-toggle="collapse" data-parent="#accordion-3" aria-expanded="false" aria-controls="accordion-3-body-02">
+                                        ¿Es bueno contar con la certificación ISO 9001:2015?
+                                        <span class="u-accordion__control-icon">
+                                            <i class="fa fa-angle-down"></i>
+                                            <i class="fa fa-angle-up"></i>
+                                        </span>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="accordion-3-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-3-heading-02" data-parent="#accordion-3">
+                                <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                    Sí, El ISO 9001 brinda la infraestructura, procesos, recursos y procedimientos necesarios para dirigir a la empresa hacia la efectividad y mejora continua. Con el fin de mejorar su sistema de calidad que le ayudará a satisfacer las necesidades de sus clientes. En consecuencia, aumentará el número de potenciales clientes a través de un mejor servicio al cliente.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Accordion -->
+
+	    <!-- Accordion -->
+        <div id="iso14001" class="u-shadow-v11 rounded g-py-100">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Heading -->
+                    <div class="text-center g-mb-60">
+                        <h2 class="g-font-weight-600 text-uppercase mb-2">
+                            ISO 14001:2015 DE GESTIÓN AMBIENTAL
+                        </h2>
+                    </div>
+                    <!-- End Heading -->
+
+                    <div id="accordion-4" class="u-accordion u-accordion-color-primary" role="tablist" aria-multiselectable="true">
+                        <!-- Card -->
+                        <div class="card g-brd-none rounded-0 g-mb-20">
+                            <div id="accordion-4-heading-01" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-4-body-01" data-toggle="collapse" data-parent="#accordion-4" aria-expanded="false" aria-controls="accordion-4-body-01">
+                                        ¿Qué es ISO 14001:2015 DE GESTIÓN AMBIENTAL?
+                                        <span class="u-accordion__control-icon">
+                                            <i class="fa fa-angle-down"></i>
+                                            <i class="fa fa-angle-up"></i>
+                                        </span>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="accordion-4-body-01" class="collapse" role="tabpanel" aria-labelledby="accordion-4-heading-01" data-parent="#accordion-4">
+                                <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                    La ISO 14001:2015 ayuda a las organizaciones a mantenerse al día con los cambios en la gestión ambiental, además, de ayudar a reducir los residuos, el ahorro de energía y la protección de la reputación frente inversores, clientes y la sociedad.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="card g-brd-none rounded-0 g-mb-20">
+                            <div id="accordion-4-heading-02" class="g-brd-bottom g-brd-gray-light-v4 g-pa-0" role="tab">
+                                <h5 class="mb-0">
+                                    <a class="collapsed d-flex justify-content-between g-color-main g-text-underline--none--hover rounded-0 g-px-30 g-py-20" href="#accordion-4-body-02" data-toggle="collapse" data-parent="#accordion-4" aria-expanded="false" aria-controls="accordion-4-body-02">
+                                        ¿Qué diferencia hay entre el ISO 14001:2015 y el ISO 14001:2004?
+                                        <span class="u-accordion__control-icon">
+                                            <i class="fa fa-angle-down"></i>
+                                            <i class="fa fa-angle-up"></i>
+                                        </span>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="accordion-4-body-02" class="collapse" role="tabpanel" aria-labelledby="accordion-4-heading-02" data-parent="#accordion-4">
+                                <div class="u-accordion__body g-color-gray-dark-v4 g-pa-30">
+                                    La principal diferencia con respecto a la 14001:2004 es la ampliación de su estructura, la cual cuenta con diez apartados y la antigua norma cuenta con cuatro: </br>
+                                    - Alcance </br>
+                                    - Referencias normativas </br>
+                                    - Términos y definiciones </br>
+                                    - Contexto de la organización </br>
+                                    - Liderazgo </br>
+                                    - Planificación </br>
+                                    - Soporte </br>
+                                    - Operación </br>
+                                    - Evaluación de desempeño </br>
+                                    - Mejora </br>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Accordion -->
+    </section>
+    <!-- End Accordion -->
+        {% endblock %}
+
+    {% block javascripts %}
+
+    <!-- JS Global Compulsory -->
+    {% compress js %}
+    <script src="{% static 'asecodeso/assets/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/jquery-migrate/jquery-migrate.min.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/bootstrap/bootstrap.min.js' %}"></script>
+    {% endcompress %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+
+    <!-- JS Unify -->
+    {% compress js %}
+    <script src="{% static 'asecodeso/assets/js/hs.core.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.header.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/helpers/hs.hamburgers.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.tabs.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.go-to.js' %}"></script>
+    {% endcompress %}
+
+    <!-- JS Customization -->
+
+    <script src="{% static 'asecodeso/assets/js/custom.js' %}"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+	    $(document).on('ready', function () {
+            // initialization of tabs
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+        });
+
+        $(window).on('load', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+        });
+
+        $(window).on('resize', function () {
+            setTimeout(function () {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
+        });
+    </script>
+    {% endblock %}
