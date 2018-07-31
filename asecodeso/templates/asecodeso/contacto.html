@@ -1,0 +1,177 @@
+{% extends 'asecodeso/base.html' %}
+
+{% block title %}ASECODESO{% endblock %}
+
+    {% load compress %}
+
+    {% load staticfiles %}
+
+    {% block stylesheets %}
+    <!-- CSS Global Icons -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-line-pro/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-hs/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hamburgers/hamburgers.min.css' %}">
+    {% endcompress %}
+
+    <!-- CSS Unify -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-core.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-components.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-globals.css' %}">
+    {% endcompress %}
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/custom.css' %}">
+    {% endblock %}
+
+
+        {% block content %}
+        <!-- Promo Block -->
+        <section class="u-bg-overlay g-bg-size-cover g-bg-pos-center g-bg-black-opacity-0_3--after" style="background-image: url({% static 'asecodeso/assets/img/slider/contacto.jpg' %});">
+            <div class="container g-color-white text-center g-pos-rel g-z-index-1 g-py-150">
+                <h1 class="h2 g-font-weight-300">
+                    Resuelve tus dudas
+                </h1>
+                <h2 class="display-2 g-font-weight-600 text-uppercase g-letter-spacing-1">
+                    Contáctanos
+                </h2>
+            </div>
+        </section>
+        <!-- End Promo Block -->
+
+        <!-- Contacts -->
+        <section class="container g-py-100">
+            <div class="row no-gutters">
+                <div class="col-lg-7">
+                    <!-- Google Map -->
+                    <div id="GMapCustomized-light" class="js-g-map embed-responsive embed-responsive-21by9 h-100 g-min-height-400" data-type="custom" data-lat="-12.095058" data-lng="-77.038395" data-zoom="12" data-title="Agency" data-styles='[["", "", [{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]], ["", "labels", [{"visibility":"on"}]], ["water", "", [{"color":"#bac6cb"}]] ]'
+                    data-pin="true" data-pin-icon="{% static 'asecodeso/assets/img/icons/green.png' %}">
+                    </div>
+                    <!-- End Google Map -->
+                </div>
+
+                <div class="col-lg-5 g-bg-gray-dark-v1">
+                    <div class="g-pa-50 g-pa-70--md">
+                        <h2 class="h2 g-color-white">
+                            Nuestra Oficina
+                        </h2>
+
+                        <!-- Contact Details -->
+                        <ul class="list-unstyled g-color-white-opacity-0_7 g-font-weight-300 g-font-size-13 g-line-height-1_8 mb-0">
+                            <li class="g-my-30">
+                                <div class="media">
+                                    <i class="d-flex g-color-primary g-font-size-20 mt-1 mr-4 icon-hotel-restaurant-235 u-line-icon-pro"></i>
+                                    <div class="media-body">
+                                        San Isidro,
+                                        <br>Av. Jorge Basadre 607, Of. 419 edificio SPACES.
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="g-my-30">
+                                <div class="media">
+                                    <i class="d-flex g-color-primary g-font-size-20 mt-1 mr-4 icon-communication-062 u-line-icon-pro"></i>
+                                    <div class="media-body">
+                                        info@asecodeso.com
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="g-my-30">
+                                <div class="media">
+                                    <i class="d-flex g-color-primary g-font-size-20 mt-1 mr-4 icon-communication-033 u-line-icon-pro"></i>
+                                    <div class="media-body">
+                                        +51 923 232 200
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="media">
+                                    <i class="d-flex g-color-primary g-font-size-20 mt-1 mr-4 icon-education-097 u-line-icon-pro"></i>
+                                    <div class="media-body">
+                                        <h2 class="g-color-white-opacity-0_9 g-font-size-default g-font-weight-600 text-uppercase mb-3">
+                                            Horario:
+                                        </h2>
+                                        <div class="mb-3">
+                                            <span class="d-block g-color-white">
+                                                Lunes - Viernes
+                                            </span>
+                                            09:00 AM - 06:00 PM
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- End Contact Details -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contacts -->
+        {% endblock %}
+
+    {% block javascripts %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/gmaps/gmaps.min.js' %}"></script>
+
+    <!-- JS Unify -->
+    {% compress js %}
+    <script src="{% static 'asecodeso/assets/js/hs.core.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.header.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/helpers/hs.hamburgers.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.tabs.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/gmap/hs.map.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.carousel.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.go-to.js' %}"></script>
+    {% endcompress %}
+
+    <!-- JS Customization -->
+
+    <script src="{% static 'asecodeso/assets/js/custom.js' %}"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        // initialization of google map
+        function initMap() {
+            $.HSCore.components.HSGMap.init('.js-g-map');
+        }
+
+        $(document).on('ready', function () {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+
+            // initialization of tabs
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+        });
+
+        $(window).on('load', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+        });
+
+        $(window).on('resize', function () {
+            setTimeout(function () {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
+        });
+    </script>
+
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyChh47zJCyKdePuH49CdMhwp7Ahcuitdvk&callback=initMap" async defer></script>
+    {% endblock %}
