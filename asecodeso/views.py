@@ -9,3 +9,6 @@ def nosotros(request):
 
 def preguntas(request):
     return render(request, 'asecodeso/preguntas.html')
+
+def contacto(request):
+    return render(request, 'asecodeso/contacto.html')

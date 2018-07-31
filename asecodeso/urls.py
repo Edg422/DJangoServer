@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^nosotros/$', views.nosotros, name='nosotros'),
     url(r'^preguntas/$', views.preguntas, name='preguntas'),
+    url(r'^contacto/$', views.contacto, name='contacto'),
 ]
