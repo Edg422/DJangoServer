@@ -12,3 +12,6 @@ def preguntas(request):
 
 def contacto(request):
     return render(request, 'asecodeso/contacto.html')
+
+def contitucion(request):
+    return render(request, 'asecodeso/constitucion.html')
