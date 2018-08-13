@@ -12,5 +12,5 @@ urlpatterns = [
     url(r'^nosotros/$', views.nosotros, name='nosotros'),
     url(r'^preguntas/$', views.preguntas, name='preguntas'),
     url(r'^contacto/$', views.contacto, name='contacto'),
-    url(r'^contitucion/$', views.constitucion, name='constitucion'),
+    url(r'^constitucion/$', views.constitucion, name='constitucion'),
 ]
