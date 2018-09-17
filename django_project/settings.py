@@ -60,10 +60,10 @@ HOST_MIDDLEWARE_URLCONF_MAP = {
     # Control Panel
     "www.goblin.pe": "goblin.urls",
     "goblin.pe": "goblin.urls",
-    "www.prisma.asecodeso.com": "prisma.urls",
-    "prisma.asecodeso.com": "prisma.urls",
     "www.asecodeso.com": "asecodeso.urls",
     "asecodeso.com": "asecodeso.urls",
+    "www.prisma.asecodeso.com": "prisma.urls",
+    "prisma.asecodeso.com": "prisma.urls",
 }
 
 ROOT_URLCONF = 'django_project.urls'
