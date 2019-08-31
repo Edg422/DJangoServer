@@ -1,0 +1,269 @@
+{% extends 'prisma/base.html' %}
+
+{% block title %}PRISMA ENERGY{% endblock %}
+
+    {% load compress %}
+
+    {% load staticfiles %}
+
+    {% block stylesheets %}
+    <!-- CSS Global Icons -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-line-pro/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-line/css/simple-line-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-hs/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/fancybox/jquery.fancybox.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hamburgers/hamburgers.min.css' %}">
+    {% endcompress %} 
+
+    <!-- CSS Unify -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-core.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-components.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-globals.css' %}">
+    {% endcompress %}
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/styles.op-courses.css' %}">
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/custom.css' %}">
+    {% endblock %}
+
+
+        {% block content %}
+        <!-- Section Content -->
+        <section id="teachers" class="g-py-50 g-bg-white">
+          <div class="container text-center g-max-width-750 g-mb-60">
+            <div class="text-uppercase u-heading-v2-5--top g-brd-vine">
+              <!--h2 class="u-heading-v2__title g-font-weight-700 g-font-size-12 g-color-white-opacity-0_8 g-mb-10">EXPERTOS</h2-->
+              <h4 class="h3 g-color-black text-uppercase mb-2" style="font-family: 'Roboto', sans-serif;">CONOCE A NUESTROS EXPERTOS</h4>
+            </div>
+
+            <p class="g-color-gray-dark-v2 mb-0">El profesional de Prisma Energy es competente, experimentado y con alta capacitación  en su campo de  especialización.Nuestros expertos le brindarán soluciones integrales de capacitación y consultoría basadas en su experiencia y conocimiento global del rubro; así mismo,  buscarán ayudarlos a lograr la maximización de la rentabilidad de sus operaciones a fin de ayudarlos a responder a los cambios del mercado.</p>
+          </div>
+
+          <div class="container">
+            <!-- Team Block -->
+            <div class="g-mx-minus-9--sm">
+              <div class="js-carousel"
+                   data-slides-show="4"
+                   data-responsive='[{
+                     "breakpoint": 1200,
+                     "settings": {
+                       "slidesToShow": 4
+                     }
+                   }, {
+                     "breakpoint": 992,
+                     "settings": {
+                       "slidesToShow": 2
+                     }
+                   }, {
+                     "breakpoint": 576,
+                     "settings": {
+                       "slidesToShow": 1
+                     }
+                   }]'>
+                <div class="js-slide">
+                  <div class="text-center g-parent g-bg-vine--hover g-pa-20 g-transition-0_3">
+                    <!-- Figure -->
+                    <figure class="g-pos-rel g-mb-30">
+                      <!-- Figure Image -->
+                      <img class="w-100" src="{% static 'asecodeso/assets/img/prisma/expert-1.jpg' %}" alt="Image Description">
+                      <!-- End Figure Image -->
+                      <!-- Figure Caption -->
+                      <figcaption>
+                        <ul class="list-unstyled g-absolute-centered opacity-0 g-opacity-1--parent-hover mb-0 g-transition-0_3" style="top: 8% !important;">
+                          <li class="mb-0">
+                            <a class="u-icon-v3 u-icon-size--sm g-color-gray-dark-v5 g-color-white--hover g-bg-white g-bg-vine--hover" href="https://www.linkedin.com/in/eduardo-paulini-villanueva-492488125/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </figcaption>
+                      <!-- Figure Caption -->
+                    </figure>
+                    <!-- End Figure -->
+
+                    <!-- Info -->
+                    <em class="d-block text-uppercase g-font-style-normal g-font-size-13 g-color-gray-dark-v5 g-color-black--parent-hover g-mb-15">MAGÍSTER EN INGENIERÍA DE PETRÓLEO Y GAS</em>
+                    <h4 class="h5 text-uppercase g-font-weight-700 g-color-gray-dark-v3 g-color-black--parent-hover g-mb-15" style="font-family: 'Roboto', sans-serif;">EDUARDO
+                      <br>
+                      PAULINI VILLANUEVA
+                    </h4>
+                    <p class="g-font-size-default g-color-gray-dark-v5 g-color-black--parent-hover mb-0" style="text-align: justify;">Ingeniero químico titulado y colegiado (CIP N° 194405) de la Universidad Nacional de Ingeniería (Perú), Magister con distinción en Ingeniería de Petróleo y Gas de la Universidad de Aberdeen (Escocia, UK).<br><br>Actualmente se desempeña como Supervisor de Producción de Gas en Savia Perú; se ha desempeñado como Ingeniero de Producción en Perenco en el lote 67 y ha desarrollado múltiples proyectos para el aseguramiento de flujo del sistema de producción, optimización de pozos mediante análisis nodal y diseño de baterías de producción.<br><br>Posee más de 6 años de experiencia en empresas como Repsol, Perenco, Savia, GMI, GMP y Osinergmin, teniendo una experiencia sólida en supervisión, diseño y optimización en actividades petroleras.</p>
+                    <!-- End Info-->
+                  </div>
+                </div>
+
+                <div class="js-slide">
+                  <div class="text-center g-parent g-bg-vine--hover g-pa-20 g-transition-0_3">
+                    <!-- Figure -->
+                    <figure class="g-pos-rel g-mb-30">
+                      <!-- Figure Image -->
+                      <img class="w-100" src="{% static 'asecodeso/assets/img/prisma/expert-2.jpg' %}" alt="Image Description">
+                      <!-- End Figure Image -->
+                      <!-- Figure Caption -->
+                      <figcaption>
+                        <ul class="list-unstyled g-absolute-centered opacity-0 g-opacity-1--parent-hover mb-0 g-transition-0_3" style="top: 8% !important;">
+                          <li class="mb-0">
+                            <a class="u-icon-v3 u-icon-size--sm g-color-gray-dark-v5 g-color-white--hover g-bg-white g-bg-vine--hover" href="https://www.linkedin.com/in/gustavo-andr%C3%A9s-magui%C3%B1a-choquehuanca-207a5265/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </figcaption>
+                      <!-- Figure Caption -->
+                    </figure>
+                    <!-- End Figure -->
+
+                    <!-- Info -->
+                    <em class="d-block text-uppercase g-font-style-normal g-font-size-13 g-color-gray-dark-v5 g-color-black--parent-hover g-mb-15">INGENIERO QUÍMICO</em>
+                    <h4 class="h5 text-uppercase g-font-weight-700 g-color-gray-dark-v3 g-color-black--parent-hover g-mb-15" style="font-family: 'Roboto', sans-serif;">GUSTAVO
+                      <br>
+                      MAGUIÑA CHOQUEHUANCA
+                    </h4>
+                    <p class="g-font-size-default g-color-gray-dark-v5 g-color-black--parent-hover mb-0" style="text-align: justify;">Ingeniero de Procesos con más de 5 años de experiencia en la Industria de Hidrocarburos en las áreas de Refinación del Petróleo, Planta de tratamiento de gas natural, fraccionamiento de líquidos de gas natural, transporte de gas por ductos, terminales de almacenamiento de hidrocarburos y plantas de ventas.<br>Experiencia en desarrollo de ingenierías Conceptual, Básica y Detalle para empresas como Petroperú, Repsol, Pluspetrol, COGA, GMP y CNPC.<br>Experiencia en diseño y evaluación de hornos de proceso cilíndrico vertical, columnas de destilación de crudo, intercambiadores de calor, aeroenfriadores y bombas. Análisis completo de un circuito de destilación primaria y vacío para determinar los cuellos de botella.</p>
+                    <!-- End Info-->
+                  </div>
+                </div>
+
+                <div class="js-slide">
+                  <div class="text-center g-parent g-bg-vine--hover g-pa-20 g-transition-0_3">
+                    <!-- Figure -->
+                    <figure class="g-pos-rel g-mb-30">
+                      <!-- Figure Image -->
+                      <img class="w-100" src="{% static 'asecodeso/assets/img/prisma/expert-3.jpg' %}" alt="Image Description">
+                      <!-- End Figure Image -->
+                      <!-- Figure Caption -->
+                      <figcaption>
+                        <ul class="list-unstyled g-absolute-centered opacity-0 g-opacity-1--parent-hover mb-0 g-transition-0_3" style="top: 8% !important;">
+                          <li class="mb-0">
+                            <a class="u-icon-v3 u-icon-size--sm g-color-gray-dark-v5 g-color-white--hover g-bg-white g-bg-vine--hover" href="https://www.linkedin.com/in/rafael-osorio/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </figcaption>
+                      <!-- Figure Caption -->
+                    </figure>
+                    <!-- End Figure -->
+
+                    <!-- Info -->
+                    <em class="d-block text-uppercase g-font-style-normal g-font-size-13 g-color-gray-dark-v5 g-color-black--parent-hover g-mb-15">MAGÍSTER EN INGENIERÍA DE PETRÓLEO</em>
+                    <h4 class="h5 text-uppercase g-font-weight-700 g-color-gray-dark-v3 g-color-black--parent-hover g-mb-15" style="font-family: 'Roboto', sans-serif;">RAFAEL
+                      <br>
+                      OSORIO
+                    </h4>
+                    <p class="g-font-size-default g-color-gray-dark-v5 g-color-black--parent-hover mb-0" style="text-align: justify;">Ingeniero de petróleo de la Universidad Nacional de Ingeniería (Perú) y magíster con mención en Ingeniería de Petróleo de la Universidad de Aberdeen (Escocia, UK). Especializado en ciencias geológicas y dinámica de fluidos; y, con gran manejo de software aplicativos a estas áreas: Eclipse, Petrel, MatBal, Techlog, Petrolog, PanSystem, Well Imager, entre otros. Autor del artículo “Geological interpretation of channelized heterolithic beds through well test analysis” para la revista Journal of Petroleum Science and Engineering.<br>
+                    Posee una experiencia profesional mayor a 5 años en la industria, habiendo trabajado en operaciones upstream de petróleo  y gas en empresas operadoras y de servicios líderes en el Perú como son  Weatherford del Perú, Equipetrol, Pluspetrol y PeruPetro; y, en la consultora AGR TRACS International del Reino Unido. 
+                    </p>
+                    <!-- End Info-->
+                  </div>
+                </div>
+
+                <div class="js-slide">
+                  <div class="text-center g-parent g-bg-vine--hover g-pa-20 g-transition-0_3">
+                    <!-- Figure -->
+                    <figure class="g-pos-rel g-mb-30">
+                      <!-- Figure Image -->
+                      <img class="w-100" src="{% static 'asecodeso/assets/img/prisma/expert-4.jpg' %}" alt="Image Description">
+                      <!-- End Figure Image -->
+                      <!-- Figure Caption -->
+                      <figcaption>
+                        <ul class="list-unstyled g-absolute-centered opacity-0 g-opacity-1--parent-hover mb-0 g-transition-0_3" style="top: 8% !important;">
+                          <li class="mb-0">
+                            <a class="u-icon-v3 u-icon-size--sm g-color-gray-dark-v5 g-color-white--hover g-bg-white g-bg-vine--hover" href="https://www.linkedin.com/in/christian-bont%C3%A1-35463334/">
+                              <i class="fa fa-linkedin"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </figcaption>
+                      <!-- Figure Caption -->
+                    </figure>
+                    <!-- End Figure -->
+
+                    <!-- Info -->
+                    <em class="d-block text-uppercase g-font-style-normal g-font-size-13 g-color-gray-dark-v5 g-color-black--parent-hover g-mb-15">INGENIERO MECÁNICO</em>
+                    <h4 class="h5 text-uppercase g-font-weight-700 g-color-gray-dark-v3 g-color-black--parent-hover g-mb-15" style="font-family: 'Roboto', sans-serif;">CHRISTIAN<br>BONTÁ ESTRADA
+                    </h4>
+                    <p class="g-font-size-default g-color-gray-dark-v5 g-color-black--parent-hover mb-0" style="text-align: justify;">Ingeniero Mecánico titulado de la Pontificia Universidad Católica del Perú con más de 10 años de experiencia en la industria de Oil & Gas. Experto en diseño, instalación y supervisión de construcción de sistemas de tuberías.<br>Actualmente se desempeña como Ingeniero de Facilidades en Savia Perú, siendo el responsable de asegurar la integridad de los equipos de producción de superficie y piping en los campos Offshore de los lotes Z6 y Z2B; así mismo, cuenta con experiencia en esta área en Pacific Off Shore del Perú como Especialista Mecánico y piping en los campos offshore de Corvina y Albacora del lote Z1. A su vez, estuvo a cargo de la inspección de la integridad de los activos estáticos y ductos del lote 192.<br>Posee amplia experiencia en el rubro de hidrocarburos en donde se viene desempeñando en diversas posiciones en empresas como Savia Perú, Pacific Off Shore del Perú, Weatherford del Perú, Schlumberger del Perú y Petro-Tech Peruana, teniendo de esta manera una amplia visión y conocimiento del sector además de su dominio en la construcción de sistemas de tuberías y aseguramiento de la integridad de éstas y los equipos de superficie.</p>
+                    <!-- End Info-->
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- End Team Block -->
+          </div>
+        </section>
+        <!-- End Section Content -->
+        {% endblock %}
+
+    {% block javascripts %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/gmaps/gmaps.min.js' %}"></script>
+
+    <!-- JS Unify -->
+    {% compress js %}
+    <script src="{% static 'asecodeso/assets/js/hs.core.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.header.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/helpers/hs.hamburgers.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.tabs.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/gmap/hs.map.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.carousel.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.go-to.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.scroll-nav.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.popup.js' %}"></script>
+    {% endcompress %}
+
+    <!-- JS Customization -->
+
+    <script src="{% static 'asecodeso/assets/js/custom.js' %}"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        // initialization of google map
+        function initMap() {
+            $.HSCore.components.HSGMap.init('.js-g-map');
+        }
+
+        $(document).on('ready', function () {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+
+            // initialization of tabs
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+        });
+
+        $(window).on('load', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+        });
+
+        $(window).on('resize', function () {
+            setTimeout(function () {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
+        });
+    </script>
+
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCyjy8HsaSGsfkiv_91LzX_t6G2kWJvSDA&callback=initMap" async defer></script>
+    {% endblock %}

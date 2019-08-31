@@ -1,0 +1,115 @@
+{% extends 'goblin/base.html' %}
+
+{% block title %}GOBLIN ENGINEERING{% endblock %}
+
+    {% load compress %}
+
+    {% load staticfiles %}
+
+    {% block stylesheets %}
+    <!-- CSS Global Icons -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-line-pro/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-line/css/simple-line-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-hs/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/fancybox/jquery.fancybox.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hamburgers/hamburgers.min.css' %}">
+    {% endcompress %} 
+
+    <!-- CSS Unify -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-core.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-components.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-globals.css' %}">
+    {% endcompress %}
+
+    <!-- CSS Template -->
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/custom.css' %}">
+    {% endblock %}
+
+
+        {% block content %}
+        <!-- Section Content -->
+        <section id="teachers" class="g-py-50 g-bg-white">
+          <div class="container text-center g-max-width-750 g-mb-60">
+            <div class="text-uppercase u-heading-v2-5--top g-brd-primary">
+              <!--h2 class="u-heading-v2__title g-font-weight-700 g-font-size-12 g-color-white-opacity-0_8 g-mb-10">EXPERTOS</h2-->
+              <h4 class="h3 g-color-black text-uppercase mb-2" style="font-family: 'Roboto', sans-serif;">CONOCE NUESTROS PROYECTOS</h4>
+            </div>
+
+            <p class="g-color-gray-dark-v2 mb-0">El profesional de Goblin Engineering es competente y experimentado en su campo de  ejecución. Nuestros expertos le brindarán soluciones integrales de capacitación y consultoría basadas en su experiencia y conocimiento global del rubro; así mismo,  buscarán ayudarlos a lograr la maximización de la rentabilidad de sus operaciones a fin de ayudarlos a responder a los cambios del mercado.</p>
+          </div>
+        </section>
+        <!-- End Section Content -->
+        {% endblock %}
+
+    {% block javascripts %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/gmaps/gmaps.min.js' %}"></script>
+
+    <!-- JS Unify -->
+    {% compress js %}
+    <script src="{% static 'asecodeso/assets/js/hs.core.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.header.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/helpers/hs.hamburgers.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.tabs.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/gmap/hs.map.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.carousel.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.go-to.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.scroll-nav.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.popup.js' %}"></script>
+    {% endcompress %}
+
+    <!-- JS Customization -->
+
+    <script src="{% static 'asecodeso/assets/js/custom.js' %}"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        // initialization of google map
+        function initMap() {
+            $.HSCore.components.HSGMap.init('.js-g-map');
+        }
+
+        $(document).on('ready', function () {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+
+            // initialization of tabs
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+        });
+
+        $(window).on('load', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+        });
+
+        $(window).on('resize', function () {
+            setTimeout(function () {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
+        });
+    </script>
+
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCyjy8HsaSGsfkiv_91LzX_t6G2kWJvSDA&callback=initMap" async defer></script>
+    {% endblock %}

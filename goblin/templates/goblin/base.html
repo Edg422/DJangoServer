@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}GOBLIN ENGINEERING{% endblock %}</title>
+
+    {% load staticfiles %}
+
+    {% load compress %}
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/favicong.ico">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/gfonts.css' %}">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/bootstrap/bootstrap.min.css' %}" type="text/css" charset="utf-8">
+    <!-- CSS Template -->
+    <!--link rel="stylesheet" href="{% static 'asecodeso/assets/css/styles.op-courses.css' %}"-->
+
+    {% block stylesheets %}
+
+    {% endblock %}
+</head>
+
+<body>
+    <main>
+      {% block header %}
+      <!-- Header -->
+      <header id="js-header" class="u-header u-header--static">
+        <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-0">
+          <nav class="js-mega-menu navbar navbar-expand-lg">
+            <div class="container">
+              <!-- Responsive Toggle Button -->
+              <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button"
+                      aria-label="Toggle navigation"
+                      aria-expanded="false"
+                      aria-controls="navBar"
+                      data-toggle="collapse"
+                      data-target="#navBar">
+                <span class="hamburger hamburger--slider">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </span>
+              </button>
+              <!-- End Responsive Toggle Button -->
+
+              <!-- Logo -->
+              <a href="http://goblin.com.pe/" class="navbar-brand">
+                <img src="{% static 'goblin/assets/img/logo/bannerlogo.png' %}" alt="GOBLIN ENGINEERING" width="290" height="70">
+              </a>
+              <!-- End Logo -->
+
+              <!-- Navigation -->
+              <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
+                <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+
+                  <!-- home -->
+                  <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                    <a href="http://goblin.com.pe/" class="nav-link g-py-7 g-px-0">Home</a>
+                  </li>
+                  <!-- End home -->
+                  <!-- soporte -->
+                  <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                    <a href="http://goblin.com.pe/soporte/" class="nav-link g-py-7 g-px-0">Consultoria y Soporte</a>
+                  </li>
+                  <!-- End soporte -->
+                  <!-- expertos -->
+                  <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                    <a href="http://goblin.com.pe/proyectos/" class="nav-link g-py-7 g-px-0">Proyectos</a>
+                  </li>
+                  <!-- End expertos -->
+                  <!-- contacto -->
+                  <li class="nav-item g-mx-10--lg g-mx-15--xl">
+                    <a href="http://goblin.com.pe/contacto/" class="nav-link g-py-7 g-px-0">Contacto</a>
+                  </li>
+                  <!-- contacto -->
+                </ul>
+	            </div>
+	            <!-- End Navigation -->
+	          </div>
+	        </nav>
+	    </div>
+	    </header>
+	    <!-- End Header -->
+        {% endblock %}
+
+        {% block content %}
+        {% endblock %}
+
+        {% block footer %}
+        <!-- Footer -->
+        <div id="contacts-section" class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Content -->
+                    <div class="col-lg-4 col-md-6 g-mb-40 g-mb-0--lg">
+                        <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                            <h2 class="u-heading-v2__title h6 text-uppercase mb-0"  style="color: #fff;">
+                                ACERCA DE NOSOTROS
+                            </h2>
+                        </div>
+
+                        <p>
+		                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="http://goblin.com.pe/">Acerca de Goblin Engineering</a><br><a class="g-color-white-opacity-0_8 g-color-white--hover" href="http://goblin.com.pe/proyecto/">Nuestros Proyectos</a>
+		                    <br>
+                            
+                        </p>
+                        <!--form action="/suscribir/" method="post">
+                            <input id="suscribir" class="rounded-0" type="text" name="suscribir" value="{{ current_name }}">
+                            <input type="submit" value="SUSCRIBIR"  class="btn btn-md u-btn-teal g-mr-10 g-mb-15" style="background-color: rgb(87, 202, 133);">
+                            <a href="mailto:capacitacion@prismaenergy-pe.com?Subject=Inscripcion" class="btn btn-md u-btn-teal g-mr-10 g-mb-15" style="background-color: rgb(87, 202, 133);">SUSCRIBIR</a>
+                        </form-->
+                    </div>
+                   
+                    <!-- End Footer Content -->
+
+                    <!-- Footer Content -->
+                    <div class="col-lg-4 col-md-6 g-mb-40 g-mb-0--lg">
+                        <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                            <h2 class="u-heading-v2__title h6 text-uppercase mb-0" style="color: #fff;">
+                                LINKS DE INTERÉS
+                            </h2>
+                        </div>
+
+                        <nav class="text-uppercase1">
+                            <ul class="list-unstyled g-mt-minus-10 mb-0">
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+					                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="http://goblin.com.pe/proyectos">
+                                            Nuestros Proyectos
+                                        </a>
+					                    <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+				                    </h4>
+                                </li>
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+					                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="http://goblin.com.pe/soporte/">
+                                            Consultoría y Soporte
+                                        </a>
+					                    <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+				                    </h4>
+                                </li>
+                                <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                                    <h4 class="h6 g-pr-20 mb-0">
+                                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="http://goblin.com.pe/contacto/">
+                                            Contacto
+                                        </a>
+                                        <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                                    </h4>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- End Footer Content -->
+
+                    <!-- Footer Content -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                            <h2 class="u-heading-v2__title h6 text-uppercase mb-0" style="color: #fff;">
+                                NUESTRO CONTACTO
+
+                            </h2>
+                        </div>
+
+                        <address class="g-bg-no-repeat g-font-size-12 mb-0" style="background-image: url({% static 'asecodeso/assets/img/maps/map2.png' %});">
+                            <!-- Location -->
+                            <div class="d-flex g-mb-20">
+                                <div class="g-mr-10">
+                                    <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                                        <i class="fa fa-map-marker"></i>
+                                    </span>
+                                </div>
+                                <p class="mb-0">
+                                  Av. San Borja Sur 1159 Int. 202<br>Lima, Perú
+                                </p>
+                            </div>
+                            <!-- End Location -->
+
+                            <!-- Phone -->
+                            <div class="d-flex g-mb-20">
+                                <div class="g-mr-10">
+                                    <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                                        <i class="fa fa-phone"></i>
+                                    </span>
+                                </div>
+                                <p class="mb-0">
+                                    +51 942 674920
+                                </p>
+                            </div>
+                            <!-- End Phone -->
+
+                            <!-- Email and Website -->
+                            <div class="d-flex g-mb-20">
+                                <div class="g-mr-10">
+                                    <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                                        <i class="fa fa-globe"></i>
+                                    </span>
+                                </div>
+                                <p class="mb-0">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="http://goblin.com.pe/contacto/">
+                                        ingenieria@goblin.com.pe
+                                    </a>
+                                    <br>
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="http://goblin.com.pe/">
+                                        www.goblin.com.pe
+                                    </a>
+                                </p>
+                            </div>
+                            <!-- End Email and Website -->
+                        </address>
+                    </div>
+                    <!-- End Footer Content -->
+                </div>
+            </div>
+        </div>
+		<footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
+		      <div class="container">
+		        <div class="row">
+		          <div class="col-md-8 text-center text-md-left g-mb-10 g-mb-0--md">
+		            <div class="d-lg-flex">
+		              <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2018 © All Rights Reserved.</small>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </footer>
+        <!-- End Footer -->
+        {% endblock %}
+
+        <a class="js-go-to u-go-to-v1" href="#!" data-type="fixed" data-position='{
+            "bottom": 15,
+            "right": 15
+            }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+            <i class="hs-icon hs-icon-arrow-top"></i>
+        </a>
+    </main>
+
+    <div class="u-outer-spaces-helper"></div>
+
+    <!-- JS Global Compulsory -->
+    {% compress js %}
+    <script src="{% static 'asecodeso/assets/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/jquery-migrate/jquery-migrate.min.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/popper.min.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/bootstrap/bootstrap.min.js' %}"></script>
+    {% endcompress %}
+
+    {% block javascripts %}
+
+    {% endblock %}
+</body>
+</html>

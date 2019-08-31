@@ -18,6 +18,7 @@ from django.contrib import admin
 from goblin import views
 
 urlpatterns = [
+    url(r'^$', include('goblin.urls')),
     url(r'^$', include('prisma.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]

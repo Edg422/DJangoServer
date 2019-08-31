@@ -1,0 +1,343 @@
+{% extends 'prisma/base.html' %}
+
+{% block title %}PRISMA ENERGY{% endblock %}
+
+    {% load compress %}
+
+    {% load staticfiles %}
+
+    {% block stylesheets %}
+    <!-- CSS Global Icons -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-line-pro/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-hs/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hamburgers/hamburgers.min.css' %}">
+    {% endcompress %}
+
+    <!-- CSS Unify -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-core.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-components.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-globals.css' %}">
+    {% endcompress %}
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/custom.css' %}">
+    <style>
+    li.selected span {
+      background-color: #57ca85 !important;
+      border-bottom: medium none;
+      color: #FFFFFF !important;
+      cursor: default;
+      display: block;
+    }
+    ul.editorTabs2 li span {
+    background-color:#F5F5F5;
+    cursor: pointer;
+    display: block;
+    font-size: 12px    
+    }
+    p {
+    font-size: 0.857rem;
+    }
+    li {
+    font-size: 0.857rem;
+    }
+    </style>
+    {% endblock %}
+
+    {% block content %}
+<section class="g-mb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 g-mb-50 g-mb-0--lg">
+        <br>
+        <div class="feature">
+          <span class="featureLeftWhite">
+            <table class="chart-details">
+              <tbody style="vertical-align: top;">
+                <tr>
+                  <td class="cell-label g-font-weight-600">Disciplina</td>
+                  <td>  Ingeniería de Procesos<br><br></td>
+                </tr>
+                <tr>
+                  <td class="cell-label g-font-weight-600">Nivel<br><br>Fecha<br><br></td>
+                  <td>Intermedio<br><br>Proximamente.<br><br></td>
+                </tr>
+                <tr>
+                  <td class="cell-label g-font-weight-600">Duración<br><br></td>
+                  <td>20 horas<br><br></td>
+                </tr>
+                <tr> 
+                  <td class="cell-label g-font-weight-600">
+                    Mecanismo&nbsp;<br>Enseñanza<br><br></td>
+                  <td>
+                    Online<br><br><br></td>
+                </tr>
+                <tr> 
+                  <td class="cell-label g-font-weight-600">
+                    Instructor</td>
+                  <td>
+                    Ing. Gustavo Andres Maguiña Choquehuanca<br><br></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><br></td>
+                </tr>
+              </tbody>
+            </table>
+          </span>
+        </div>
+      </div>
+      <div class="col-lg-6" style="border-style:solid;border-width: 0px 1px 0px 1px; border-color: #bbb;">
+        <div style="text-align: justify;">
+          <h3>
+            <span id="ContentPlaceHolder1_applicationManager1_ctl00_Details1_lblTitle" class="g-font-weight-600" style="text-align: left;">HORNOS DE PROCESO CILINDRICO VERTICAL</span>
+          </h3>
+                 
+          <p>En el curso se detallará las características principales de un horno de procesos utilizados en refinerías de petróleo, plantas de gas, fraccionadoras de líquidos, etc.</p>
+          
+          <p>El enfoque de ingeniería de procesos abarcará los criterios de diseño de un horno cilíndrico vertical, la descripción de las condiciones operativas apropiadas para un desempeño óptimo y eficiencia máxima; el análisis térmico e hidráulico y cálculo de la eficiencia.</p>
+          
+          <p>Lectura de un P&ID para hornos de procesos cilíndrico vertical.</p>
+          <p>Casos de estudio en refinerías de petróleo y plantas de gas.</p>
+          <p>Ventajas del desarrollo eficiente del control operativo de hornos.</p>          
+          <div class="cS-hidden">
+          </div>
+          
+          <ul class="editorTabs2 nav nav-justified u-nav-v1-1 u-nav-vine g-brd-vine g-mb-20" style="cursor: pointer; border-bottom: solid 4px #57ca85; margin-top: 10px; height: 29px; padding-left: 5px; line-height: 1.0;padding-bottom: 40px;">
+            <li class="tabLink selected nav-item" id="tab1" onclick="openCity(event, 'tabContent1')" style="float: left;list-style-image: none; list-style-type: none; margin: 1px 2px;">
+              <span style="height: 40px; line-height: 40px; text-align:center;"><b>Contenido</b></span>
+            </li>
+            <li class="tabLink nav-item" id="tab2" onclick="openCity(event, 'tabContent2')" style="float: left;list-style-image: none; list-style-type: none; margin: 0px 2px;">
+              <span style="height: 40px; line-height: 40px; text-align:center;"><b>Diseñado para</b></span>
+            </li>
+            <li class="tabLink nav-item" id="tab3" onclick="openCity(event, 'tabContent3')" style="float: left;list-style-image: none; list-style-type: none; margin: 0px 2px;">
+              <span style="height: 40px; line-height: 40px; text-align:center;"><b>Usted aprenderá</b></span>
+            </li>
+            <li class="tabLink nav-item" id="tab4" onclick="openCity(event, 'tabContent4')" style="float: left;list-style-image: none; list-style-type: none; margin: 0px 2px;">
+              <span style="height: 40px; line-height: 40px; text-align:center;"><b>Instructor</b></span>
+            </li>
+            <li class="tabLink nav-item" id="tab5" onclick="openCity(event, 'tabContent5')" style="float: left;list-style-image: none; list-style-type: none; margin:0px 2px;">
+              <span style="height: 40px; line-height: 40px; text-align:center;"><b>Inscripción</b></span>
+            </li>
+            <style media="screen" type="text/css">
+              .editorTabs2 span {
+                -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+              }
+            </style>
+          </ul>
+          <ul class="editorTabContent2">
+            <li id="tabContent1" style="" class="tabContent selected">
+              <p>
+                <b>Módulo 1. Descripción de Hornos de Proceso</b>
+              </p>
+              <ul>
+                <li>¿Qué es un horno Cilíndrico vertical?</li>
+                <li>Configuración geométrica de un Horno Cilíndrico Vertical</li>
+                <li>Descripción de los componentes de un Horno Cilíndrico Vertical</li>
+                <li>Perfil de presiones y Exceso de Aire</li>
+              </ul>
+              <p></p>
+              <p>
+                <b>Módulo 2. Diagrama de Tuberías e Instrumentación de un Horno Cilíndrico Vertical</b>
+              </p>
+              <ul>
+                <li>Lectura completa de un P&amp;ID</li>
+                <li>Análisis e identificación de los lazos de control de procesos y de seguridad</li>
+              </ul>
+              <p></p>
+              <p>
+                <b>Módulo 3. Evaluación Térmica, Eficiencia y cálculo Hidráulico</b>
+              </p>
+              <ul>
+                <li>Criterios de Diseño</li>
+                <li>Evaluación térmica</li>
+                <li>Cálculo de eficiencia</li>
+                <li>Cálculo hidráulico</li>
+              </ul>
+              <p></p>
+              <p>
+                <b>Módulo 4. Casos de Estudio – Simulación de Procesos</b>
+              </p>
+              <ul>
+                <li>Evaluación de un Horno cilíndrico Vertical que opera en una refinería de Crudo</li>
+                <li>Análisis operacional y control operativo de un horno</li>
+              </ul>
+              <p></p>
+              <p>
+                <b>Descripción del Caso de Estudio</b>
+              </p>
+              <p>El caso de estudio consiste en la evaluación del performance de un horno cilíndrico vertical empleado como parte del precalentamiento de crudo hacia una columna de destilación primaria.</p>
+              <p>El análisis se desarrollará para una carga de operación normal la evaluación térmica e hidráulica, seguidamente se analizará el incremento de la carga al horno y por consiguiente identificar los cuellos de botella para realizar modificaciones en el horno (revamping).</p>
+              <p>Adicionalmente se analizará el procesamiento de otros tipos de crudo con rango de °API desde 22 hasta 37 para analizar el performance e identificar el comportamiento térmico e hidráulico.</p>
+              <p>La finalidad es reconocer los principales cuello de botella en un horno cuando se varia o incrementa la dieta de crudo, aunque el análisis es un caso específico para una refinería de crudo, los conceptos rescatados se aplicaran por ejemplo para un horno de aceite caliente empleado en plantas de gas, fraccionadoras de líquidos de gas natural, plantas de licuefacción de gas, etc.</p>
+            </li>
+            <li id="tabContent2" style="display: none;" class="tabContent">
+              <p>Ingenieros, jefes de área, operadores, estudiantes de ingeniería química, petroquímica, petróleo y profesionales que trabajan en la industria de hidrocarburos, quienes son responsables del diseño y operación de refinerías de petróleo, plantas de gas, plantas fraccionadoras de líquidos de gas natural, plantas de licuefacción de gas natural, etc.</p>
+            </li>
+            <li id="tabContent3" style="display: block;" class="tabContent">
+              <ul>
+                <li>
+                  <p>Los componentes principales de un Horno Cilíndrico vertical, las variables operativas de control y de seguridad.</p>
+                </li>
+                <li>
+                  <p>Interpretar el perfil de presiones en el interior de un horno y el perfil de temperaturas.</p>
+                </li>
+                <li>
+                  <p>Leer correctamente un Diagrama de tuberías e instrumentación de un Horno cilíndrico vertical.</p>
+                </li>
+                <li>
+                  <p>Emplear los criterios de diseño para hornos</p>
+                </li>
+                <li>
+                  <p>Desarrollar un análisis térmico e hidráulico de un horno</p>
+                </li>
+                <li>
+                  <p>Calcular la eficiencia</p>
+                </li>
+                <li>
+                  <p>Analizar el desempeño de un horno empleando el software de simulación Aspen HYSYS V9.</p>
+                </li>
+                <li>
+                  <p>Por ultimo comprender el control operativo de un Horno de Procesos.</p>
+                </li>
+              </ul>
+            </li>
+            <li id="tabContent4" style="display: none;" class="tabContent">
+              <p><a href="http://prismaenergy-peru.com/expertos/" class="g-font-weight-700" style="color:rgb(87,202,133);">Ing. Gustavo Andres Maguiña Choquehuanca</a></p>
+              <p>Ingeniero de Procesos con más de 5 años de experiencia en la Industria de Hidrocarburos en las áreas de Refinación del Petróleo, Planta de tratamiento de gas natural, fraccionamiento de líquidos de gas natural, transporte de gas por ductos, terminales de almacenamiento de hidrocarburos y plantas de ventas.</p> 
+              <p>Experiencia en desarrollo de ingenierías Conceptual, Básica y Detalle para empresas como Petroperú, Repsol, Pluspetrol , COGA, GMP y CNPC.</p>
+              <p>Experiencia en diseño y evaluación de hornos de proceso cilíndrico vertical, columnas de destilación de crudo, intercambiadores de calor, aeroenfriadores y bombas. Análisis completo de un circuito de destilación primaria y vacío para determinar los cuellos de botella.</p>
+            </li>
+            <li id="tabContent5" style="display: none;" class="tabContent">
+                 
+              <p>Para consultas escríbanos a:</p>
+              
+              <p>E-mail: <a style="color:rgb(87,202,133);" href="mailto:capacitacion@prismaenergy-peru.com?Subject=Información" target="_top">capacitacion@prismaenergy-peru.com</a></p>
+          
+              <p>Celular: +51 986 690505</p>
+
+              <p>También puede hacer clic <a href="http://prismaenergy-peru.com/contacto/" class="g-font-weight-700" style="color:rgb(87,202,133);">aquí.</a></p>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script>
+        function openCity(evt, cityName) {
+          // Declare all variables
+          var i, tabcontent, tablinks;
+
+          // Get all elements with class="tabcontent" and hide them
+          tabcontent = document.getElementsByClassName("tabContent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tabLink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" selected", "");
+          }
+
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " selected";
+        }
+      </script>
+      <div class="col-lg-3">
+        <div>
+          <span class="featureTextGrayMedium"><br><b>Próximos Cursos</b><br><br></span>
+          
+          <span class="upcoming-notes"></span>
+
+          <a style="display: block; color:rgb(87,202,133);" href="http://prismaenergy-peru.com/cv/"><br><b>Hornos de proceso cilíndrico vertical</b></a>
+          <span id="NextSessions_lnkLocation_0" class="upcoming-location-link">Lima, Perú<br></span>
+          <span id="NextSessions_lnkDates_0">Proximamente<br></span>
+          <span class="upcoming-notes"></span>
+
+          <a style="display: block; color:rgb(87,202,133);" href="http://prismaenergy-peru.com/afop/"><br><b>Aseguramiento de flujo para operaciones petroleras - AFOP</b></a>
+          <span id="NextSessions_lnkLocation_1" class="upcoming-location-link">Lima, Perú<br></span>
+          <span id="NextSessions_lnkDates_1" class="upcoming-dates">08 Ene - 17 Ene 2019<br></span>
+          <span class="upcoming-notes"></span>
+
+          <a style="display: block; color:rgb(87,202,133);" href="http://prismaenergy-peru.com/fpf/"><br><b>Formación petrolera para no petroleros - FPF</b></a>
+          <span id="NextSessions_lnkLocation_2" class="upcoming-location-link">Lima, Perú<br></span>
+          <span id="NextSessions_lnkDates_2" class="upcoming-dates">Proximamente.<br></span>
+          <span class="upcoming-notes"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    {% endblock %}
+
+    {% block javascripts %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/gmaps/gmaps.min.js' %}"></script>
+
+    <!-- JS Unify -->
+    {% compress js %}
+    <script src="{% static 'asecodeso/assets/js/hs.core.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.header.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/helpers/hs.hamburgers.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.tabs.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/gmap/hs.map.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.carousel.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.go-to.js' %}"></script>
+    {% endcompress %}
+
+    <!-- JS Customization -->
+
+    <script src="{% static 'asecodeso/assets/js/custom.js' %}"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        // initialization of google map
+        function initMap() {
+            $.HSCore.components.HSGMap.init('.js-g-map');
+        }
+
+        $(document).on('ready', function () {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+
+            // initialization of tabs
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+        });
+
+        $(window).on('load', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+        });
+
+        $(window).on('resize', function () {
+            setTimeout(function () {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
+        });
+    </script>
+    {% endblock %}

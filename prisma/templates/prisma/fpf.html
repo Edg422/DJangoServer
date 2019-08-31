@@ -1,0 +1,346 @@
+{% extends 'prisma/base.html' %}
+
+{% block title %}PRISMA ENERGY{% endblock %}
+
+    {% load compress %}
+
+    {% load staticfiles %}
+
+    {% block stylesheets %}
+    <!-- CSS Global Icons -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-line-pro/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-hs/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hamburgers/hamburgers.min.css' %}">
+    {% endcompress %}
+
+    <!-- CSS Unify -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-core.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-components.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-globals.css' %}">
+    {% endcompress %}
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/custom.css' %}">
+    <style>
+    li.selected span {
+      background-color: #57ca85 !important;
+      border-bottom: medium none;
+      color: #FFFFFF !important;
+      cursor: default;
+      display: block;
+    }
+    ul.editorTabs2 li span {
+    background-color:#F5F5F5;
+    cursor: pointer;
+    display: block;
+    font-size: 12px    
+    }
+    p {
+    font-size: 0.857rem;
+    }
+    li {
+    font-size: 0.857rem;
+    }
+    </style>
+    {% endblock %}
+
+    {% block content %}
+<section class="g-mb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 g-mb-50 g-mb-0--lg">
+        <br>
+        <div class="feature">
+          <span class="featureLeftWhite">
+            <table class="chart-details">
+              <tbody style="vertical-align: top;">
+                <tr>
+                  <td class="cell-label g-font-weight-600">Disciplina</td>
+                  <td>Ingeniería de Reservorios, Ingeniería de Petróleo y Gas<br><br></td>
+                </tr>
+                <tr>
+                  <td class="cell-label g-font-weight-600">Nivel<br><br>Fecha<br><br></td>
+                  <td>Fundamentos<br><br>Proximamente.<br><br></td>
+                </tr>
+                <tr>
+                  <td class="cell-label g-font-weight-600">Duración<br><br></td>
+                  <td>20 horas<br><br></td>
+                </tr>
+                <tr> 
+                  <td class="cell-label g-font-weight-600">
+                    Mecanismo&nbsp;<br>Enseñanza<br><br></td>
+                  <td>
+                    Online<br><br><br></td>
+                </tr>
+                <tr> 
+                  <td class="cell-label g-font-weight-600">
+                    Instructor</td>
+                  <td>
+                    MSc. Ing. Rafael Osorio<br><br></td>
+                </tr>
+                <tr>
+                  <td colspan="2"><br></td>
+                </tr>
+              </tbody>
+            </table>
+          </span>
+        </div>
+      </div>
+      <div class="col-lg-6" style="border-style:solid;border-width: 0px 1px 0px 1px; border-color: #bbb;">
+        <div style="text-align: justify;">
+          <h3>
+            <span id="ContentPlaceHolder1_applicationManager1_ctl00_Details1_lblTitle" class="g-font-weight-600" style="text-align: left;">FORMACIÓN PETROLERA PARA NO PETROLEROS – FPF</span>
+          </h3>
+                 
+          <p>El curso de formación petrolera para no petroleros está estructurado para suministrar las competencias básicas para entender los diferentes procesos de exploración, perforación y producción de hidrocarburos presentes en un yacimiento, así como el proceso de transporte y refinación del petróleo crudo.</p>
+          
+          <p>Es importante que estudiantes y profesionales no vinculados directamente a la carrera de Ingeniería de Petróleo conozcan las distintas actividades requeridas en la cadena productiva de hidrocarburos, a fin de que puedan tener una visión global, especialmente si están ligados a la industria del petróleo y gas natural.</p>
+          
+          <p>Dada la importancia del petróleo hoy en día para la economía global, es necesario que todos aquellos estudiantes y futuros profesionales aspirantes a tener alguna relación con la industria petrolera, conozcan sobre los procesos de exploración, perforación, explotación, refinación, medición y transporte de hidrocarburos así como su interrelación con los aspectos ambientales, de política petrolera, entorno nacional e internacional del mercado petrolero.</p> 
+          <div class="cS-hidden">
+          </div>
+          
+          <ul class="editorTabs2 nav nav-justified u-nav-v1-1 u-nav-vine g-brd-vine g-mb-20" style="cursor: pointer; border-bottom: solid 4px #57ca85; margin-top: 10px; height: 29px; padding-left: 5px; line-height: 1.0;padding-bottom: 40px;">
+            <li class="tabLink selected nav-item" id="tab1" onclick="openCity(event, 'tabContent1')" style="float: left;list-style-image: none; list-style-type: none; margin: 1px 2px;">
+              <span style="height: 40px; line-height: 40px; text-align:center;"><b>Contenido</b></span>
+            </li>
+            <li class="tabLink nav-item" id="tab2" onclick="openCity(event, 'tabContent2')" style="float: left;list-style-image: none; list-style-type: none; margin: 0px 2px;">
+              <span style="height: 40px; line-height: 40px; text-align:center;"><b>Diseñado para</b></span>
+            </li>
+            <li class="tabLink nav-item" id="tab3" onclick="openCity(event, 'tabContent3')" style="float: left;list-style-image: none; list-style-type: none; margin: 0px 2px;">
+              <span style="height: 40px; line-height: 40px; text-align:center;"><b>Usted aprenderá</b></span>
+            </li>
+            <li class="tabLink nav-item" id="tab4" onclick="openCity(event, 'tabContent4')" style="float: left;list-style-image: none; list-style-type: none; margin: 0px 2px;">
+              <span style="height: 40px; line-height: 40px; text-align:center;"><b>Instructor</b></span>
+            </li>
+            <li class="tabLink nav-item" id="tab5" onclick="openCity(event, 'tabContent5')" style="float: left;list-style-image: none; list-style-type: none; margin:0px 2px;">
+              <span style="height: 40px; line-height: 40px; text-align:center;"><b>Inscripción</b></span>
+            </li>
+            <style media="screen" type="text/css">
+              .editorTabs2 span {
+                -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Firefox */
+                -ms-user-select: none; /* Internet Explorer/Edge */
+                user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+              }
+            </style>
+          </ul>
+          <ul class="editorTabContent2">
+            <li id="tabContent1" style="" class="tabContent selected">
+              <p>
+                <b>Módulo 1. Aspectos generales sobre el petróleo y el gas.</b>
+              </p>
+              <ul>
+                <li>Conceptos generales de Geología del Petróleo. Origen, formación y migración del petróleo y su entrampamiento en rocas porosas y permeables</li>
+                <li>El Petróleo y sus propiedades en los yacimientos petroleros.</li>
+                <li>Mecanismos de entrampamiento y tipos de yacimientos petroleros.</li>
+                <li>Reservas de Petróleo y gas en cuencas sedimentarias del país.</li>
+              </ul>
+              <p></p>
+              <p>
+                <b>Módulo 2. Conceptos sobre exploración petrolera.</b>
+              </p>
+              <ul>
+                <li>Exploración petrolífera. Métodos de búsqueda del petróleo.</li>
+                <li>Interpretación sísmica y logística para la perforación de pozos exploratorios y desarrollo de campos petrolíferos. Cálculo de reservas extraíbles comercialmente.</li>  
+              </ul>
+              <p></p>
+              <p>
+                <b>Módulo 3. Perforación y completamiento de pozos.</b>
+              </p>
+              <ul>
+                <li>Perforación exploratoria y de desarrollo.</li>
+                <li>Principales operaciones y equipos utilizados en la etapa de perforación de pozos petroleros.</li>
+                <li>Completamiento de Pozos, puesta en producción de los pozos comercialmente productores.</li>
+                <li>Principales trabajos de subsuelo para el mantenimiento de pozos petroleros. Factor de recobro.</li>
+              </ul>
+              <p></p>
+              <p>
+                <b>Módulo 4. Desarrollo de campos petroleros.</b>
+              </p>
+              <ul>
+                <li>Sistemas de producción de petróleo o gas: Flujo natural y artificial.</li>
+                <li>Producción Primaria y Secundaria. Equipos de superficie y de subsuelo para la extracción del petróleo o gas a través de los pozos perforados.</li>
+                <li>Manejo y tratamiento en superficie del petróleo, el gas y el agua.</li>
+                <li>Sistemas de separación de fluidos, equipos para tratamiento de crudo, gas y agua, compresores y bombas.</li>
+                <li>Plantas de proceso y compresión de gas natural.</li>
+                <li>Tratamiento de aguas residuales: reinyección o vertimiento.</li>
+              </ul>
+              <p></p>
+              <p>
+                <b>Módulo 5. Medición y transporte de fluidos producidos.</b>
+              </p>
+              <ul>
+                <li>Almacenamiento y fiscalización de crudo y gas.</li>
+                <li>Equipos e instrumentos para la medición. Análisis de la calidad del crudo. Cromatografía de gases.</li>
+                <li>Sistemas de transporte por Oleoductos y Gasoductos</li>
+                <li>Estaciones de Bombeo de crudo y compresión de gas.</li>
+              </ul>
+              <p></p>
+              <p>
+                <b>Módulo 6. Refinación y comercialización de los derivados del petróleo.</b>
+              </p>
+              <ul>
+                <li>Proceso de refinación: destilación primaria y destilación fraccionada. Plantas de refinación y tratamiento de gas.     </li>
+                <li>Principales derivados del petróleo: gasolina y combustibles derivados, solventes, detergentes, resinas y productos industriales básicos. Productos base para la petroquímica.</li>
+                <li>Comercialización y distribución de productos derivados del petróleo.</li>
+              </ul>
+              <p></p>
+              <p>
+                <b>Módulo 7. Aspectos varios de la industria petrolera.</b>
+              </p>
+              <ul>
+                <li>Historia del Petróleo en Colombia.</li>
+                <li>Estadísticas petroleras nacionales y mundiales.</li>
+              </ul>
+            </li>
+            <li id="tabContent2" style="display: none;" class="tabContent">
+              <p>Ejecutivos, profesionales no petroleros, personal de mantenimiento, comunicadores sociales, personal de apoyo logístico (materiales, contratación contabilidad y finanzas, informática) y personal que labora en empresas petroleras, empresas contratistas, entes gubernamentales y estudiantes universitarios.</p>
+
+              <p>En general todos aquellos profesionales y estudiantes que deseen obtener una visión integral de la industria petrolera para lograr un mejor desempeño de sus roles que juegan en la industria.</p> 
+            </li>
+            <li id="tabContent3" style="display: none;" class="tabContent">
+              <ul>
+                <li>
+                  <p>Lograr una visión integral de los distintos procesos que componen la industria petrolera y su entorno, a fin de que los concurrentes al curso online se familiaricen con los tópicos señalados, a fin de motivar en ellos el desempeño de un rol más proactivo en el desarrollo de sus actividades dentro de la industria petrolífera y gasífera.</p>
+                </li>
+                <li>
+                  <p>Familiarizarse con las diferentes etapas, procesos, equipos, materiales y herramientas que intervienen en la búsqueda, extracción y tratamiento de crudo y gas, así como los procesos almacenamiento, transporte, refinación y comercialización de los diferentes derivados del petróleo. Mejorar las competencias laborales del personal que desempeña diferentes roles en la industria.</p>
+                </li>
+              </ul>
+            </li>
+            <li id="tabContent4" style="display: none;" class="tabContent">
+              <p><a href="http://prismaenergy-peru.com/expertos/" class="g-font-weight-700" style="color:rgb(87,202,133);">MSc. Ing. Rafael Osorio</a></p>
+              <p>Ingeniero petrolero de la Universidad Nacional de Ingeniería (Perú), magister con mención en Ingeniería de Petróleo de la Universidad de Aberdeen (Escocia, UK). Se ha desempeñado como geólogo y reservorista en Weatherford y Pluspetrol.</p> 
+              <p>Posee más de 5 años de experiencia en la industria petrolera habiendo desempeñado funciones en compañías de servicios y operadoras.</p>
+            </li>
+            <li id="tabContent5" style="display: none;" class="tabContent">
+                 
+              <p>Para consultas escríbanos a:</p>
+              
+              <p>E-mail: <a style="color:rgb(87,202,133);" href="mailto:capacitacion@prismaenergy-peru.com?Subject=Información" target="_top">capacitacion@prismaenergy-peru.com</a></p>
+          
+              <p>Celular: +51 986 690505</p>
+
+              <p>También puede hacer clic <a href="http://prismaenergy-peru.com/contacto/" class="g-font-weight-700" style="color:rgb(87,202,133);">aquí.</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <script>
+        function openCity(evt, cityName) {
+          // Declare all variables
+          var i, tabcontent, tablinks;
+
+          // Get all elements with class="tabcontent" and hide them
+          tabcontent = document.getElementsByClassName("tabContent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tabLink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" selected", "");
+          }
+
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " selected";
+        }
+      </script>
+      <div class="col-lg-3">
+        <div>
+          <span class="featureTextGrayMedium"><br><b>Próximos Cursos</b><br><br></span>
+          
+          <span class="upcoming-notes"></span>
+
+          <a style="display: block; color:rgb(87,202,133);" href="http://prismaenergy-peru.com/cv/"><br><b>Hornos de proceso cilíndrico vertical</b></a>
+          <span id="NextSessions_lnkLocation_0" class="upcoming-location-link">Lima, Perú<br></span>
+          <span id="NextSessions_lnkDates_0">Proximamente.<br></span>
+          <span class="upcoming-notes"></span>
+
+          <a style="display: block; color:rgb(87,202,133);" href="http://prismaenergy-peru.com/afop/"><br><b>Aseguramiento de flujo para operaciones petroleras - AFOP</b></a>
+          <span id="NextSessions_lnkLocation_1" class="upcoming-location-link">Lima, Perú<br></span>
+          <span id="NextSessions_lnkDates_1" class="upcoming-dates">08 Ene - 17 Ene 2019<br></span>
+          <span class="upcoming-notes"></span>
+
+          <a style="display: block; color:rgb(87,202,133);" href="http://prismaenergy-peru.com/fpf/"><br><b>Formación petrolera para no petroleros - FPF</b></a>
+          <span id="NextSessions_lnkLocation_2" class="upcoming-location-link">Lima, Perú<br></span>
+          <span id="NextSessions_lnkDates_2" class="upcoming-dates">Proximamente.<br></span>
+          <span class="upcoming-notes"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    {% endblock %}
+
+    {% block javascripts %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/gmaps/gmaps.min.js' %}"></script>
+
+    <!-- JS Unify -->
+    {% compress js %}
+    <script src="{% static 'asecodeso/assets/js/hs.core.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.header.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/helpers/hs.hamburgers.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.tabs.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/gmap/hs.map.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.carousel.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.go-to.js' %}"></script>
+    {% endcompress %}
+
+    <!-- JS Customization -->
+
+    <script src="{% static 'asecodeso/assets/js/custom.js' %}"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        // initialization of google map
+        function initMap() {
+            $.HSCore.components.HSGMap.init('.js-g-map');
+        }
+
+        $(document).on('ready', function () {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+
+            // initialization of tabs
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+        });
+
+        $(window).on('load', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+        });
+
+        $(window).on('resize', function () {
+            setTimeout(function () {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
+        });
+    </script>
+    {% endblock %}

@@ -1,0 +1,234 @@
+{% extends 'goblin/base.html' %}
+
+{% block title %}GOBLIN ENGINEERING{% endblock %}
+
+    {% load compress %}
+
+    {% load staticfiles %}
+
+    {% block stylesheets %}
+    <!-- CSS Global Icons -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-line-pro/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/icon-hs/style.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/vendor/hamburgers/hamburgers.min.css' %}">
+    {% endcompress %}
+
+    <!-- CSS Unify -->
+    {% compress css %}
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-core.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-components.css' %}">
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/unify-globals.css' %}">
+    {% endcompress %}
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="{% static 'asecodeso/assets/css/custom.css' %}">
+    {% endblock %}
+        {% block content %}
+        <!-- Icon Blocks -->
+        <section class="g-bg-secondary">
+          <div class="container g-py-50">
+            <div class="row justify-content-center g-mb-60">
+              <div class="col-lg-7">
+                <!-- Heading -->
+                <div class="text-center">
+                  <h2 class="h3 g-color-black text-uppercase mb-2" style="font-family: 'Roboto', sans-serif;">CÓMO AYUDAMOS A NUESTROS CLIENTES</h2>
+                  <div class="d-inline-block g-width-35 g-height-2 g-bg-primary mb-2"></div>
+                  <p class="lead mb-0">Mejoramos el desempeño y manejamos el riesgo a través de la cadena de valor del Mineria y Construccion.</p>
+                </div>
+                <!-- End Heading -->
+              </div>
+            </div>
+            <!-- Icon Blocks -->
+            <div class="row">
+              <div class="col-lg-6 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-30">
+                  <div class="media g-mb-15">
+                    <!--div class="d-flex mr-4">
+                      <span class="g-color-gray-dark-v4 g-font-size-26">
+                        <i class="icon-education-087 u-line-icon-pro"></i>
+                      </span>
+                    </div-->
+                    <div class="media-body">
+                      <h3 class="h5 g-color-black mb-20">Proyectos de Clase Mundial</h3>
+                      <div class="g-width-30 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
+                      <p class="g-color-gray-dark-v4 g-mb-0">Ayudamos a nuestros clientes a llevar a cabo proyectos de clase mundial que maximizan el retorno de su inversión.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Icon Blocks -->
+              </div>
+              <div class="col-lg-6 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-30">
+                  <div class="media g-mb-15">
+                    <!--div class="d-flex mr-4">
+                      <span class="g-color-gray-dark-v4 g-font-size-26">
+                        <i class="icon-education-035 u-line-icon-pro"></i>
+                      </span>
+                    </div-->
+                    <div class="media-body">
+                      <h3 class="h5 g-color-black mb-20">Análisis digitales y avanzados</h3>
+                      <div class="g-width-30 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
+                      <p class="g-color-gray-dark-v4 g-mb-0">Nuestro equipo de expertos levantará y analizará los datos necesarios para convertirlos en acción que ayude a capturar oportunidades, manejar riesgos, y mejorar el desempeño de sus operaciones.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Icon Blocks -->
+              </div>
+            </div>
+            <!-- End Icon Blocks -->
+            <!-- Icon Blocks -->
+            <div class="row">
+              <div class="col-lg-6 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-30">
+                  <div class="media g-mb-15">
+                    <!--div class="d-flex mr-4">
+                      <span class="g-color-gray-dark-v4 g-font-size-26">
+                        <i class="icon-education-141 u-line-icon-pro"></i>
+                      </span>
+                    </div-->
+                    <div class="media-body">
+                      <h3 class="h5 g-color-black mb-20">Estrategia</h3>
+                      <div class="g-width-30 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
+                      <p class="g-color-gray-dark-v4 g-mb-0">Ayudamos a las empresas de petróleo y gas a desarrollar estrategias para alcanzar el crecimiento y crear valor en un ambiente volátil e incierto.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Icon Blocks -->
+              </div>
+              <div class="col-lg-6 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-30">
+                  <div class="media g-mb-15">
+                    <!--div class="d-flex mr-4">
+                      <span class="g-color-gray-dark-v4 g-font-size-26">
+                        <i class="icon-finance-256 u-line-icon-pro"></i>
+                      </span>
+                    </div-->
+                    <div class="media-body">
+                      <h3 class="h5 g-color-black mb-20">Global Gas</h3>
+                      <div class="g-width-30 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
+                      <p class="g-color-gray-dark-v4 g-mb-0">Ayudamos a las compañías de Gas a crear resultados sobresalientes a través su cadena de valor. </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Icon Blocks -->
+              </div>
+            </div>
+            <!-- End Icon Blocks -->
+            <!-- Icon Blocks -->
+            <div class="row">
+              <div class="col-lg-6 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-30">
+                  <div class="media g-mb-15">
+                    <!--div class="d-flex mr-4">
+                      <span class="g-color-gray-dark-v4 g-font-size-26">
+                        <i class="icon-science-020 u-line-icon-pro"></i>
+                      </span>
+                    </div-->
+                    <div class="media-body">
+                      <h3 class="h5 g-color-black mb-20">Organización</h3>
+                      <div class="g-width-30 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
+                      <p class="g-color-gray-dark-v4 g-mb-0">Ayudamos a las compañías de Petróleo y Gas a diseñar su organización para el éxito a través de nuestro conocimiento profundo de la industria y  herramientas exitosas.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Icon Blocks -->
+              </div>
+              <div class="col-lg-6 g-mb-30">
+                <!-- Icon Blocks -->
+                <div class="u-shadow-v19 g-bg-white rounded g-pa-30">
+                  <div class="media g-mb-15">
+                    <!--div class="d-flex mr-4">
+                      <span class="g-color-gray-dark-v4 g-font-size-26">
+                        <i class="icon-finance-009 u-line-icon-pro"></i>
+                      </span>
+                    </div-->
+                    <div class="media-body">
+                      <h3 class="h5 g-color-black mb-20">Eficiencia y Costos</h3>
+                      <div class="g-width-30 g-brd-bottom g-brd-gray-dark-v5 g-my-15"></div>
+                      <p class="g-color-gray-dark-v4 g-mb-0">Ayudamos a nuestros clientes a mejorar su eficiencia y reducir sus costos eliminando los desperdicios y la variabilidad, optimizando los materiales y recursos, y capturando las oportunidades que se presenten.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Icon Blocks -->
+              </div>
+            </div>
+            <!-- End Icon Blocks -->
+          </div>
+        </section>
+        <!-- End Icon Blocks -->
+        <section style="background-color:rgb(87,202,133);">
+          <div class="container g-py-25">
+            <div class="d-flex justify-content-between">
+              <h3 class="h5 align-self-center g-color-white mb-0 mr-4">¿Quieres asesorarte con los mejores? Solicita información sobre nuestros servicios.<br>Escríbenos a ingenieria@goblin.com.pe</h3>
+              <a class="align-self-center btn btn-xl u-btn-outline-white g-font-size-default" href="http://goblin.com.pe/contacto/">Contáctanos</a>
+            </div>
+          </div>
+        </section>
+        {% endblock %}
+
+    {% block javascripts %}
+
+    <!-- JS Implementing Plugins -->
+    <script src="{% static 'asecodeso/assets/vendor/hs-megamenu/src/hs.megamenu.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/slick-carousel/slick/slick.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/vendor/gmaps/gmaps.min.js' %}"></script>
+
+    <!-- JS Unify -->
+    {% compress js %}
+    <script src="{% static 'asecodeso/assets/js/hs.core.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.header.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/helpers/hs.hamburgers.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.tabs.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/gmap/hs.map.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.carousel.js' %}"></script>
+    <script src="{% static 'asecodeso/assets/js/components/hs.go-to.js' %}"></script>
+    {% endcompress %}
+
+    <!-- JS Customization -->
+    <script src="{% static 'asecodeso/assets/js/custom.js' %}"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+        // initialization of google map
+        function initMap() {
+            $.HSCore.components.HSGMap.init('.js-g-map');
+        }
+        $(document).on('ready', function () {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+
+            // initialization of tabs
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+        });
+        $(window).on('load', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+        });
+        $(window).on('resize', function () {
+            setTimeout(function () {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
+        });
+    </script>
+    {% endblock %}

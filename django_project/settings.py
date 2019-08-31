@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,7 +26,7 @@ SECRET_KEY = '4fq^(ef&!_xt5f0_(3=0z)%%fs)z3n4pmj=!0l!nt0xb%19h4e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '178.128.184.20', '.goblin.pe', '.asecodeso.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '178.128.184.20', '.goblin.com.pe', '.asecodeso.com','.prismaenergy-peru.com']
 
 # Application definition
 
@@ -59,12 +60,16 @@ MIDDLEWARE_CLASSES = (
 
 HOST_MIDDLEWARE_URLCONF_MAP = {
     # Control Panel
-    "www.goblin.pe": "goblin.urls",
-    "goblin.pe": "goblin.urls",
+    "goblin.asecodeso.com": "goblin.urls",
+    "www.goblin.asecodeso.com": "goblin.urls",
+    "www.goblin.com.pe": "goblin.urls",
+    "goblin.com.pe": "goblin.urls",
     "www.asecodeso.com": "asecodeso.urls",
     "asecodeso.com": "asecodeso.urls",
     "www.prisma.asecodeso.com": "prisma.urls",
     "prisma.asecodeso.com": "prisma.urls",
+    "www.prismaenergy-peru.com": "prisma.urls",
+    "prismaenergy-peru.com": "prisma.urls",
 }
 
 ROOT_URLCONF = 'django_project.urls'
@@ -115,11 +120,16 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
-
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 # Allow Django from all hosts. This snippet is installed from
 # /var/lib/digitalocean/allow_hosts.py
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 import os
 import netifaces
@@ -147,7 +157,7 @@ CACHES = {
 
 CACHE_MIDDLEWARE_ALIAS = 'default'
 
-CACHE_MIDDLEWARE_SECONDS = 6000
+CACHE_MIDDLEWARE_SECONDS = 60
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
